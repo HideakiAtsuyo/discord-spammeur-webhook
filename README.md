@@ -1,8 +1,6 @@
 # Webhook-Selfbot
 A simple selfbot for raid with webhooks.
 
-Created by Iroo
-
 🔰 Before start:
 1 - cmd: `npm i`  
 1 - config the `config.json`  
