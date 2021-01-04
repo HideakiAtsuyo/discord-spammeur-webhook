@@ -1,0 +1,19 @@
+{
+  "name": "webhook",
+  "version": "1.0.0",
+  "description": "A raid tool (webhook)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "iroo",
+  "license": "ISC",
+  "dependencies": {
+    "bufferutil": "^4.0.1",
+    "colors": "^1.4.0",
+    "discord.js": "^12.3.1",
+    "discord.js-self": "^12.0.4",
+    "discord.js-selfbotbypass": "^1.0.26",
+    "utf-8-validate": "^5.0.2"
+  }
+}
